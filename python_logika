@@ -1,0 +1,83 @@
+a = "pi"
+b = "sang"
+c = "am"
+d = "bon"
+e = 3
+f = 7
+g = 2
+h = 10.00
+
+PERTANYAAN:
+
+a + b == "pisang" AND c + d = "ambon"
+
+PENJELASAN:
+Variabel string selalu ada dalam kutip. Penggabungan dua string atau lebih, tetap akan menjadi string. 
+Tapi ada yang salah dalam statement ini. Hasil penggabungan dua string c + d hanya memakai satu simbol sama dengan '='. Satu simbol sama dengan '=' ini adalah operator (simbol) dari variabel. BUKAN hasil penggabungan variabel :)
+JAWABAN akhir: ERROR.
+SKOR: @mentaripagi
+
+PERTANYAAN:
+
+a + b + " " + c + d == "pisangambon" AND e * f >= h
+
+PENJELASAN:
+a + b + " " + c + d == "pi" + "sang" + " " + "am" + "bon" ATAU "pisang ambon".
+"pisang ambon" jelas beda dengan "pisangambon".
+FALSE.
+Disini kita memakai operator 'AND'. Masih ingat jika pakai AND maka dua-duanya harus benar. Tidak usah mengurus statement lain, capek, jika salah satu salah dan pakai AND, maka hasil akhir adalah FALSE.
+Tapi jika penasaran: 
+e * f >= h itu sama dengan 3 * 7 >= 10.00
+atau 21 >= 10.00. Dan 21 lebih besar daripada 10. Jawabannya TRUE.
+Jika False AND TRUE, maka hasilnya adalah False.
+JAWABAN akhir: FALSE.
+SKOR: @mentaripagi @iwansetiawan @Asu
+
+PERTANYAAN:
+
+NOT(d * g == "bonbonbon") OR e * f >= g * h
+
+PENJELASAN
+d * g itu sama dengan "bon" * 2 == "bonbon"
+jadi d * g == "bonbonbon" adalah False
+NOT(False) adalah TRUE
+Ingat, kita memakai OR dalam pernyataan kali ini. Jadi sebenarnya jawaban akhir adalah TRUE. Sebab jika menggunakan OR, jika salah satunya benar maka ia akan menjadi TRUE hehe.
+Tapi bagi yang penasaran, apa hasil 
+e * f >= g * h
+3 * 7 = 21
+g * h = 2 * 10.00 = 20.00
+21 >= 20.00 adalah TRUE.
+True OR True hasilnya adalah TRUE
+JAWABAN akhir: TRUE.
+SKOR: @wiryayidayana @acongtan @mentaripagi 
+
+PERTANYAAN:
+
+b + e == e + g AND NOT(f / e != f * c)
+
+PENJELASAN:
+b + e == e + g
+"sang" + 3 hasilnya adalah ERROR
+"sang" adalah string sementara 3 adalah integer (bilangan bulat). String (kata kata atau kalimat) boleh dikalikan bilangan bulat, tapi tidak bisa ditambah, dikurangi atau dibagi.
+Penasaran dengan teka-teki selanjutnya?
+NOT(f / e != f * c)
+NOT(7 / 3 != 7 * "am")
+NOT(2 != "amamamamamamam") lihat 'am' nya ada tujuh kali
+NOT(TRUE)
+FALSE
+Hasil akhir: error AND False. Yaitu adalah ERROR
+SKOR: Tidak ada
+
+PERTANYAAN:
+
+h % f == h % e OR NOT(b * g == "pipipipipipi")
+
+PENJELASAN:
+h % f sama dengan 10 % 7 sama dengan 3.
+h % e sama dengan 10 % 3 sama dengan 1.
+3 == 1 hasilnya FALSE. Sebab 3 berbeda dengan 1.
+b * g adalah "sang" * 2 jadi hasilnya harusnya "sangsang".
+b * g == "pipipipipipi" adalah FALSE
+NOT(FALSE) adalah TRUE
+Hasil Akhir: False OR True adalah TRUE
+SKOR: @wiryayudayana @acongtan @mentaripagi
